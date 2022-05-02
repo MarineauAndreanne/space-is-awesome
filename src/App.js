@@ -1,23 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import Navbar from "./Navbar";
+
+import astronaut from "./images/astronaut.svg";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <section className="full-banner">
+        <Navbar />
+        <section className="title-banner">
+          <div className="title">
+            <h1>
+              Because
+              <br />
+              Space is
+              <br />
+              awesome.
+            </h1>
+          </div>
+          <div className="logo">
+            <img src={astronaut} alt={"logo"}></img>
+          </div>
+        </section>
+      </section>
     </div>
   );
 }
