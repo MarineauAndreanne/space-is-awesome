@@ -1,7 +1,6 @@
 section.full-banner {
   background: linear-gradient(74deg, var(--primary) 32%, var(--secondary) 32%);
   height: 550px;
-  max-width: 1200px;
   display: grid;
 }
 
@@ -37,6 +36,13 @@ li {
 
 a {
   color: #fff;
+  border-bottom: 1px solid var(--secondary);
+  padding-bottom: 5px;
+  transition: all 200ms ease-in-out;
+}
+
+a:hover {
+  border-bottom: 1px solid #fff;
 }
 
 section.title-banner {
@@ -58,4 +64,8 @@ h1 {
 img {
   width: 500px;
   padding-right: 80px;
+}
+
+section.news {
+  padding: 40px;
 }

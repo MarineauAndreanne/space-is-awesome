@@ -1,6 +1,7 @@
 import React from "react";
-import "./App.css";
+import "./styles/App.css";
 import Navbar from "./Navbar";
+import NewsTabs from "./NewsTabs";
 
 import astronaut from "./images/astronaut.svg";
 
@@ -23,6 +24,10 @@ function App() {
             <img src={astronaut} alt={"logo"}></img>
           </div>
         </section>
+      </section>
+
+      <section className="news">
+        <NewsTabs />
       </section>
     </div>
   );
