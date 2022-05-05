@@ -1,0 +1,28 @@
+h2.title {
+  margin-bottom: 10px;
+}
+
+p.date-taken {
+  margin-bottom: 5px;
+}
+
+.photo-and-explanation {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-items: center;
+}
+
+.photo {
+  margin-top: 20px;
+}
+
+img {
+  width: 400px;
+}
+
+.explanation p {
+  padding-right: 10px;
+  text-align: justify;
+  line-height: 1.8;
+}

@@ -21,7 +21,7 @@ function App() {
             </h1>
           </div>
           <div className="logo">
-            <img src={astronaut} alt={"logo"}></img>
+            <img src={astronaut} alt={"logo"} className="banner-logo"></img>
           </div>
         </section>
       </section>
@@ -29,6 +29,8 @@ function App() {
       <section className="news">
         <NewsTabs />
       </section>
+
+      <section>Hello from bottom section</section>
     </div>
   );
 }

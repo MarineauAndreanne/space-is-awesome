@@ -34,8 +34,8 @@
 }
 
 .react-tabs__tab-panel--selected {
-  color: orange;
+  color: var(--secondary);
   background-color: var(--gray3);
-  height: 600px;
+  height: auto;
   padding: 20px;
 }
