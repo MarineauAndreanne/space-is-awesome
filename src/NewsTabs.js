@@ -1,7 +1,7 @@
 import React from "react";
 import { Tab, Tabs, TabList, TabPanel } from "react-tabs";
 import PhotoOfDay from "./PhotoOfDay";
-import SpaceSounds from "./SpaceSounds";
+import RocketLaunches from "./RocketLaunches";
 import MarsRover from "./MarsRover";
 import AsteroidTracker from "./AsteroidTracker";
 
@@ -13,7 +13,7 @@ export default function NewsTabs() {
       <div className="tabs">
         <TabList className="all-tabs">
           <Tab>Photo of the day</Tab>
-          <Tab>Space sounds</Tab>
+          <Tab>Rocket Launches</Tab>
           <Tab>Mars Rover</Tab>
           <Tab>Asteroid tracker</Tab>
         </TabList>
@@ -23,7 +23,7 @@ export default function NewsTabs() {
           <PhotoOfDay />
         </TabPanel>
         <TabPanel>
-          <SpaceSounds />
+          <RocketLaunches />
         </TabPanel>
         <TabPanel>
           <MarsRover />

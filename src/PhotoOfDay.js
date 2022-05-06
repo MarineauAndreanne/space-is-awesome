@@ -40,7 +40,7 @@ export default function PhotoOfDay() {
               allow="encrypted-media"
             ></iframe>
           )}
-          <p>&#169; {photoData.copyright}</p>
+          <small className="copyright">&#169; {photoData.copyright}</small>
         </div>
         <div className="explanation">
           <p>{photoData.explanation}</p>

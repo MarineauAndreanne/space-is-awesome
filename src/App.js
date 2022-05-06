@@ -1,9 +1,10 @@
 import React from "react";
-import "./styles/App.css";
 import Navbar from "./Navbar";
 import NewsTabs from "./NewsTabs";
 
+import "./styles/App.css";
 import astronaut from "./images/astronaut.svg";
+import space from "./images/space.svg";
 
 function App() {
   return (
@@ -30,7 +31,13 @@ function App() {
         <NewsTabs />
       </section>
 
-      <section>Hello from bottom section</section>
+      <footer>
+        <h3>
+          Visit us daily for <span>SPACE NEWS </span>; because space is
+          awesooome !
+        </h3>
+        <img src={space} alt="space" className="space-logo"></img>
+      </footer>
     </div>
   );
 }
