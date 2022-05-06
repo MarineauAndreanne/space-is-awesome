@@ -11,6 +11,7 @@ p.date-taken {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  margin-bottom: 20px;
 }
 
 .photo {
@@ -24,6 +25,8 @@ img {
 
 .copyright {
   display: block;
+  line-height: 1.5;
+  margin: 5px 0;
 }
 
 .explanation p {

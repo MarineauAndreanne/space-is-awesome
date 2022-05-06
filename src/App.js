@@ -37,6 +37,7 @@ function App() {
           awesooome !
         </h3>
         <img src={space} alt="space" className="space-logo"></img>
+        <small className="signature">Coded by Andreanne Marineau 2022</small>
       </footer>
     </div>
   );

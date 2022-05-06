@@ -81,5 +81,13 @@ footer span {
 
 footer .space-logo {
   float: right;
+  margin-bottom: 10px;
   width: 400px;
+}
+
+small.signature {
+  float: left;
+  margin-top: 240px;
+  margin-left: 50px;
+  opacity: 0.5;
 }

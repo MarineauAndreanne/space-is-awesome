@@ -43,7 +43,7 @@ export default function RocketLaunches() {
         })}
         <div className="data-source-info">
           <img src={rocket} alt="rocket" className="rocket"></img>
-          <small>Data by RocketLaunch.Live</small>
+          <small>Data propulsed by RocketLaunch.Live</small>
         </div>
       </div>
     </>
