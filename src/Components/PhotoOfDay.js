@@ -31,8 +31,8 @@ export default function PhotoOfDay() {
   return (
     <div>
       <h2 className="title">{photoData.title}</h2>
-      <p className="date-taken">Date taken: {photoData.date}</p>
-      <label>Choose date:</label>
+      <p className="date-taken">Date: {photoData.date}</p>
+      <label>Go back in time:</label>
       <input
         type="date"
         id="chosen-date"
@@ -53,7 +53,11 @@ export default function PhotoOfDay() {
               allowfullscreen="allowfullscreen"
             ></iframe>
           )}
-          <p>&#169; {photoData.copyright}</p>
+          {photoData.copyright ? (
+            <p>&#169; {photoData.copyright}</p>
+          ) : (
+            <div></div>
+          )}
         </div>
         <div className="explanation">
           <p>{photoData.explanation}</p>
