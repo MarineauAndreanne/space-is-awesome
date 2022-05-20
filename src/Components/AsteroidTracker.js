@@ -22,7 +22,7 @@ export default function AsteroidTracker() {
       setCount(data.element_count);
       setAsteroidData(data.near_earth_objects[date]);
     }
-  }, []);
+  }, [date]);
 
   if (!asteroidData) return <div>Exploring space...</div>;
 

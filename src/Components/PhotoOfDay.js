@@ -50,6 +50,7 @@ export default function PhotoOfDay() {
               src={photoData.url}
               frameBorder="0"
               allow="encrypted-media"
+              allowfullscreen="allowfullscreen"
             ></iframe>
           )}
           <p>&#169; {photoData.copyright}</p>

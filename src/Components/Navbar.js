@@ -1,5 +1,4 @@
-import React, { useState } from "react";
-import PhotoOfDay from "./PhotoOfDay";
+import React from "react";
 
 export default function Navbar() {
   return (
