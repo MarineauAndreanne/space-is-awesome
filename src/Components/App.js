@@ -2,15 +2,16 @@ import React from "react";
 import Navbar from "./Navbar";
 import NewsTabs from "./NewsTabs";
 
-import "./styles/App.css";
-import astronaut from "./images/astronaut.svg";
-import space from "./images/space.svg";
+import "../styles/App.css";
+import astronaut from "../images/astronaut.svg";
+import space from "../images/space.svg";
 
 function App() {
   return (
     <div className="App">
       <section className="full-banner">
         <Navbar />
+
         <section className="title-banner">
           <div className="title">
             <h1>

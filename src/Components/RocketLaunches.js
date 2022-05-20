@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 
-import "./styles/RocketLaunches.css";
-import rocket from "./images/rocket.svg";
+import "../styles/RocketLaunches.css";
+import rocket from "../images/rocket.svg";
 
 export default function RocketLaunches() {
   const [launchesData, setLaunchesData] = useState(null);
@@ -24,7 +24,7 @@ export default function RocketLaunches() {
   return (
     <>
       <h2 className="rocket-launches-title">
-        Stay tuned to stay updated on the next five rocket launches...
+        Stay tuned for updates on the next five rocket launches...
       </h2>
       <div className="all-launches">
         {launchesData.map(function (launchData, index) {

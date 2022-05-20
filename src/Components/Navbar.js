@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import PhotoOfDay from "./PhotoOfDay";
 
 export default function Navbar() {
   return (
@@ -7,16 +8,13 @@ export default function Navbar() {
       <div className="links">
         <ul>
           <li>
-            <a href="#">Photo of the day</a>
+            <a href="#go-to-tabs">Photo of the day</a>
           </li>
           <li>
-            <a href="#">Space sounds</a>
+            <a href="#tab:r1:1">Rocket Launches</a>
           </li>
           <li>
-            <a href="#">Mars Rover</a>
-          </li>
-          <li>
-            <a href="#">Asteroid tracker</a>
+            <a href="#go-to-tabs">Asteroid tracker</a>
           </li>
         </ul>
       </div>
