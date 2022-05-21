@@ -38,7 +38,16 @@ function App() {
           awesooome !
         </h3>
         <img src={space} alt="space" className="space-logo"></img>
-        <small className="signature">Coded by Andreanne Marineau 2022</small>
+        <small className="signature">
+          <a
+            href="https://github.com/MarineauAndreanne/space-is-awesome"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Open-source code
+          </a>{" "}
+          by Andreanne Marineau 2022
+        </small>
       </footer>
     </div>
   );

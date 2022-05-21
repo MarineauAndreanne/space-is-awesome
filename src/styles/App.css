@@ -94,3 +94,13 @@ small.signature {
   margin-left: 50px;
   opacity: 0.5;
 }
+
+.signature a {
+  color: black;
+  border: none;
+  transition: all 200ms ease-in-out;
+}
+
+.signature a:hover {
+  color: var(--primary);
+}
