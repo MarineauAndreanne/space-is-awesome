@@ -121,6 +121,9 @@ small.signature {
   section.full-banner {
     height: 400px;
   }
+  .links {
+    display: none;
+  }
   .title-banner h1 {
     font-size: 65px;
   }
