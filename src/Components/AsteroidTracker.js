@@ -1,30 +1,30 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 
-import "../styles/AsteroidTracker.css";
+import "../styles/AsteroidTracker.css"
 
 // const apiKey = process.env.REACT_APP_NASA_APIKEY;
-const apiKey = "It5ubxeaaIqB1nCYPvQeTM4YmzT5HQK9VvYRneWn";
+const apiKey = "It5ubxeaaIqB1nCYPvQeTM4YmzT5HQK9VvYRneWn"
 
 export default function AsteroidTracker() {
-  const [count, setCount] = useState(0);
-  const [asteroidData, setAsteroidData] = useState(null);
+  const [count, setCount] = useState(0)
+  const [asteroidData, setAsteroidData] = useState(null)
 
-  const date = new Date().toISOString().slice(0, 10);
+  const date = new Date().toISOString().slice(0, 10)
 
   useEffect(() => {
-    fetchAsteroidData();
+    fetchAsteroidData()
 
     async function fetchAsteroidData() {
       const response = await fetch(
-        `https://api.nasa.gov/neo/rest/v1/feed?start_date=2022-05-22&end_date=${date}&api_key=${apiKey}`
-      );
-      const data = await response.json();
-      setCount(data.element_count);
-      setAsteroidData(data.near_earth_objects[date]);
+        `https://api.nasa.gov/neo/rest/v1/feed?start_date=${date}&end_date=${date}&api_key=${apiKey}`
+      )
+      const data = await response.json()
+      setCount(data.element_count)
+      setAsteroidData(data.near_earth_objects[date])
     }
-  }, [date]);
+  }, [date])
 
-  if (!asteroidData) return <div>Exploring space...</div>;
+  if (!asteroidData) return <div>Exploring space...</div>
 
   return (
     <>
@@ -100,9 +100,9 @@ export default function AsteroidTracker() {
               </div>
               <br />
             </div>
-          );
+          )
         })}
       </div>
     </>
-  );
+  )
 }

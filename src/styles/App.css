@@ -1,3 +1,9 @@
+.App {
+  min-width: 820px;
+
+  margin: 0 auto;
+}
+
 section.full-banner {
   background: linear-gradient(74deg, var(--primary) 32%, var(--secondary) 32%);
   display: grid;
@@ -103,4 +109,28 @@ small.signature {
 
 .signature a:hover {
   color: var(--primary);
+}
+
+@media only screen and (max-width: 1200px) {
+  .App {
+    width: 100vh;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  section.full-banner {
+    height: 400px;
+  }
+  .title-banner h1 {
+    font-size: 65px;
+  }
+  .banner-logo {
+    width: 300px;
+  }
+  footer .space-logo {
+    width: 250px;
+  }
+  small.signature {
+    margin-top: 130px;
+  }
 }

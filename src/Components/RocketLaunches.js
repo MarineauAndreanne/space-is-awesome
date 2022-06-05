@@ -1,25 +1,25 @@
-import React, { useState, useEffect } from "react";
-import axios from "axios";
+import React, { useState, useEffect } from "react"
+import axios from "axios"
 
-import "../styles/RocketLaunches.css";
-import rocket from "../images/rocket.svg";
+import "../styles/RocketLaunches.css"
+import rocket from "../images/rocket.svg"
 
 export default function RocketLaunches() {
-  const [launchesData, setLaunchesData] = useState(null);
+  const [launchesData, setLaunchesData] = useState(null)
 
   useEffect(() => {
-    fetchLaunchesData();
+    fetchLaunchesData()
 
     async function fetchLaunchesData() {
       const response = await axios(
         `https://fdo.rocketlaunch.live/json/launches/next/5`
-      );
+      )
 
-      setLaunchesData(response.data.result);
+      setLaunchesData(response.data.result)
     }
-  }, []);
+  }, [])
 
-  if (!launchesData) return <div>Exploring space...</div>;
+  if (!launchesData) return <div>Exploring space...</div>
 
   return (
     <>
@@ -39,7 +39,7 @@ export default function RocketLaunches() {
                 {launchesData[index].pad.location.country}
               </p>
             </div>
-          );
+          )
         })}
         <div className="data-source-info">
           <img src={rocket} alt="rocket" className="rocket"></img>
@@ -47,5 +47,5 @@ export default function RocketLaunches() {
         </div>
       </div>
     </>
-  );
+  )
 }

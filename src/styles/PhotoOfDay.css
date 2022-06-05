@@ -34,3 +34,14 @@ img {
   text-align: justify;
   line-height: 1.8;
 }
+
+@media only screen and (max-width: 800px) {
+  .photo-and-explanation {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .photo {
+    margin: 20px auto;
+  }
+}

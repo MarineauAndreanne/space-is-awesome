@@ -1,35 +1,35 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react"
 
-import "../styles/PhotoOfDay.css";
+import "../styles/PhotoOfDay.css"
 
 // const apiKey = process.env.REACT_APP_APIKEY;
-const apiKey = "Mh7uMyod6LSzZxOk11W2CiErh56aXvXfV7UVqEEM";
+const apiKey = "Mh7uMyod6LSzZxOk11W2CiErh56aXvXfV7UVqEEM"
 
 export default function PhotoOfDay() {
-  const [photoData, setPhotoData] = useState(null);
-  const today = new Date().toISOString().slice(0, 10);
-  const [date, setDate] = useState(today);
+  const [photoData, setPhotoData] = useState(null)
+  const today = new Date().toISOString().slice(0, 10)
+  const [date, setDate] = useState(today)
 
   const changeDate = (e) => {
-    setDate(e.target.value);
-  };
+    setDate(e.target.value)
+  }
 
   useEffect(() => {
-    fetchPhoto();
+    fetchPhoto()
 
     async function fetchPhoto() {
       const response = await fetch(
         `https://api.nasa.gov/planetary/apod?api_key=${apiKey}&date=${date}`
-      );
-      const data = await response.json();
-      setPhotoData(data);
+      )
+      const data = await response.json()
+      setPhotoData(data)
     }
-  }, [date]);
+  }, [date])
 
-  if (!photoData) return <div>Exploring space...</div>;
+  if (!photoData) return <div>Exploring space...</div>
 
   return (
-    <div>
+    <div className="photo-of-day-container">
       <h2 className="title">{photoData.title}</h2>
       <p className="date-taken">Date: {photoData.date}</p>
       <label>Go back in time:</label>
@@ -64,5 +64,5 @@ export default function PhotoOfDay() {
         </div>
       </div>
     </div>
-  );
+  )
 }
