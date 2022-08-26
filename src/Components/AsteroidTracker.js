@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react"
 
 import "../styles/AsteroidTracker.css"
 
-// const apiKey = process.env.REACT_APP_NASA_APIKEY;
+// const apiKey = process.env.REACT_APP_NASA_APIKEY
 const apiKey = "It5ubxeaaIqB1nCYPvQeTM4YmzT5HQK9VvYRneWn"
 
 export default function AsteroidTracker() {

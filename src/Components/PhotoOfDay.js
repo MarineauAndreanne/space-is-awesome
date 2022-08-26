@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react"
 
 import "../styles/PhotoOfDay.css"
 
-// const apiKey = process.env.REACT_APP_APIKEY;
-const apiKey = "Mh7uMyod6LSzZxOk11W2CiErh56aXvXfV7UVqEEM"
+const apiKey = process.env.REACT_APP_APIKEY
+// const apiKey = "Mh7uMyod6LSzZxOk11W2CiErh56aXvXfV7UVqEEM"
 
 export default function PhotoOfDay() {
   const [photoData, setPhotoData] = useState(null)
