@@ -28,18 +28,32 @@ export default function RocketLaunches() {
       </h2>
       <div className="all-launches">
         {launchesData.map(function (launchData, index) {
-          return (
-            <div className="individual-launch" key={index}>
-              <p className="launch-description">
-                {launchesData[index].launch_description}
-              </p>
-              <p className="pad-location">
-                Pad Location: {launchesData[index].pad.location.name},{" "}
-                {launchesData[index].pad.location.statename},{" "}
-                {launchesData[index].pad.location.country}
-              </p>
-            </div>
-          )
+          if (launchesData[index].pad.location.statename) {
+            return (
+              <div className="individual-launch" key={index}>
+                <p className="launch-description">
+                  {launchesData[index].launch_description}
+                </p>
+                <p className="pad-location">
+                  Pad Location: {launchesData[index].pad.location.name},{" "}
+                  {launchesData[index].pad.location.statename},{" "}
+                  {launchesData[index].pad.location.country}
+                </p>
+              </div>
+            )
+          } else {
+            return (
+              <div className="individual-launch" key={index}>
+                <p className="launch-description">
+                  {launchesData[index].launch_description}
+                </p>
+                <p className="pad-location">
+                  Pad Location: {launchesData[index].pad.location.name},{" "}
+                  {launchesData[index].pad.location.country}
+                </p>
+              </div>
+            )
+          }
         })}
         <div className="data-source-info">
           <img src={rocket} alt="rocket" className="rocket"></img>
